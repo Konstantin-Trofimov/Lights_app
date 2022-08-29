@@ -15,7 +15,7 @@ function render(c = 'white', isProgram = false) {
  let secondColor = randomColor()
  wrap.innerHTML = ''
  counter++
- 
+
  lights.map((i, index) => {
   if (isProgram) {
    programedLights(i, index, secondColor)
@@ -50,7 +50,7 @@ function action(evt) {
  const target = evt.target 
 
  if (target.tagName = 'button' && target.classList.contains('start')) {
-  tmr = setInterval(() => render(randomColor(), true, 1), 1000)
+  tmr = setInterval(() => render(randomColor(), true), 1000)
   console.log(tmr)
  }
  else if (target.tagName = 'button' && target.classList.contains('stop')) {
